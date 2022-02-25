@@ -1,0 +1,46 @@
+import java.util.Locale;
+import java.util.Scanner; 
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner (System.in); 
+		
+		int N; 
+		double NO; 
+		double soma=0; 
+		double mult=0; 
+		double result=0; 
+		
+		N=sc.nextInt();
+		
+		for (int i= 0; i < N; i++) {
+			
+			for (int j = 1; j <= 3; j++) {
+				
+				NO = sc.nextDouble(); 
+				
+				if (j==1) {
+					mult = NO*2; 
+					
+				}
+				
+				if (j==2) {
+					mult = NO*3; 
+				}
+				
+				if (j==3) {
+					mult=NO*5; 
+				}
+			}
+			
+			soma += mult; 
+			result=soma/10;
+			
+		 System.out.printf("%.1f", result); 
+		}
+		
+		sc.close(); 
+	}
+
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner; 
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in); 
+		
+		int N; 
+		int i = 0; 
+		
+		int final1 = 0; 
+		int fatorial; 
+		
+		N=sc.nextInt(); 
+		
+		for (i=1; i<=N; i++) {
+			
+			final1 *= (N-i); 
+		}
+		
+		fatorial=N*final1; 
+		
+      System.out.printf("%d%n", fatorial);  
+      
+      sc.close(); 
+	
+	}
+
+}
